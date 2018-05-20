@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "246597363827",
+    "firebase_url": "https://ueat-a44f2.firebaseio.com",
+    "project_id": "ueat-a44f2",
+    "storage_bucket": "ueat-a44f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246597363827:android:626ef46345777f62",
+        "android_client_info": {
+          "package_name": "com.example.phiiphiroberts.ueat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246597363827-57pdff0nu01g1cter79fcpe8f0e73jng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.phiiphiroberts.ueat",
+            "certificate_hash": "6f4ed0f0cdb49a4709a0e065bc7588f373afa649"
+          }
+        },
+        {
+          "client_id": "246597363827-9p73tdhle59rlhcmsspogn7hq4utcnmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_ibookTfm0PnkwstB0iJjdw6ynbR_FSs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246597363827-9p73tdhle59rlhcmsspogn7hq4utcnmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

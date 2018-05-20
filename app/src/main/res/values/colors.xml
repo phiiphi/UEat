@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33B5E5</color>
+    <color name="colorPrimaryDark">#01241A</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="White">#FFF</color>
+    <color name="black">#000</color>
+    <color name="blue_black">#06052E</color>
+    <color name="red">#E71A00</color>
+    <color name="progressBar">#00C7E3</color>
+    <color name="transparent">#80ffffff</color>
+    <color name="my_bar">#F3631A</color>
+
+
+
+    <color name="blue">#33B5E5</color>
+    <color name="bgRowBackground">#FA315B</color>
+
+
+
+    <color name="food_detail">#004B3F</color>
+    <color name="buttonActive">#A9d440</color>
+    <color name="makeOrder">#9907a8</color>
+    <color name="transWhite">#80ffffff</color>
+
+
+    <color name="overlayBackground">#909192</color>
+    <color name="ActionBar">#0e0d0e</color>
+
+
+
+
+
+    //Colors of the sliders
+    <color name="SliderOne">#22313F</color>
+    <color name="SliderTwo">#9C27BC</color>
+    <color name="SliderThree">#6C7A89</color>
+
+    //Colors of the dots
+    <color name="dot_dark_SliderOne">#C21853</color>
+    <color name="dot_dark_SliderTwo">#6A1B9A</color>
+    <color name="dot_dark_SliderThree">#6A1B9A</color>
+
+    //Colors of the dots
+    <color name="dot_light_SliderOne">#F8B</color>
+    <color name="dot_light_SliderTwo">#E1BEE7</color>
+
+
+    <array name="dot_active">
+        <item>@color/dot_light_SliderOne</item>
+        <item>@color/dot_light_SliderTwo</item>
+
+
+    </array>
+    <array name="dot_inactive">
+        <item>@color/dot_dark_SliderOne</item>
+        <item>@color/dot_dark_SliderTwo</item>
+
+
+    </array>
+
+</resources>

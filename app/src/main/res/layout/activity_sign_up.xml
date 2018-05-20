@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~    EAT365 - An Online food vendors app written as part of a semester program
+  ~    written to Madam Audery Asante as part of a semester project in obtaining
+  ~    a degree in Bsc. Computer Science.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phiiphiroberts.ueat.SignUp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signinback"
+        android:scaleType="centerCrop"
+        android:id="@+id/formBack"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/formlogo"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/formlogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/tranparent_white"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Getting Started"
+                android:textColor="@color/blue_black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Juts more few details to get started"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/blue_black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <!--<AutoCompleteTextView
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="PHONE"
+                android:inputType="phone"
+                android:background="@drawable/phone"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingLeft="60dp"
+                android:ems="10"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"/>!-->
+            <com.santalu.maskedittext.MaskEditText
+                android:id="@+id/editPhone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="PHONE"
+                android:inputType="phone"
+                android:background="@drawable/phone"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingLeft="60dp"
+                android:ems="11"
+                android:layout_marginBottom="10dp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                app:met_mask="##########" />
+
+            <AutoCompleteTextView
+                android:id="@+id/editUserName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="USERNAME"
+                android:inputType="textPersonName"
+                android:background="@drawable/username"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingLeft="60dp"
+                android:ems="11"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/editPass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:background="@drawable/password"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:paddingLeft="60dp"
+                android:ems="10"
+                android:textColorHint="#FFF"
+                android:textColor="#FFF"
+                android:layout_marginBottom="10dp"
+                tools:ignore="InvalidId" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textColor="@color/blue_black"
+                android:background="@drawable/sign_up"
+                android:onClick="onSubmitClick"
+                android:hint="SIGN UP"
+                android:textColorHint="@color/blue_black"
+                android:layout_marginRight="60dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Already Having Account?"
+                android:textStyle="italic"
+                android:textSize="15dp"
+                android:textColor="@color/blue_black"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnSigIn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textColor="@color/White"
+                android:background="@drawable/newsignup"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:hint="SIGN IN"
+                android:layout_gravity="center"
+                android:textColorHint="#fff"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

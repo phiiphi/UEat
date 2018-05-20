@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~    EAT365 - An Online food vendors app written as part of a semester program
+  ~    written to Madam Audery Asante as part of a semester project in obtaining
+  ~    a degree in Bsc. Computer Science.
+  -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uuuuu"
+    android:padding="16dp"
+    tools:context=".Cart">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listCart"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/transWhite"
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+
+                <TextView
+                    android:text="Total:"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:text="100Gh"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+           <!-- <info.hoang8f.widget.FButton
+                android:id="@+id/btnPlaceOrder"
+                android:text="Place Order"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:buttonColor="@color/buttonActive"
+                app:shadowColor="@android:color/black"
+                app:shadowEnabled="true"
+                app:shadowHeight="5dp"
+                app:cornerRadius="4dp"/>!-->
+            <Button
+                android:id="@+id/btnPlaceOrder"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:background="@color/red"
+                android:layout_margin="50dp"
+                android:hint="Place Order"
+                android:textSize="24sp"
+                android:textColorHint="@color/White"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
